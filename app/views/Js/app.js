@@ -37,7 +37,7 @@ let btnAdd=document.getElementById('btnAdd');
                     let lista="";
                     for(let j=0;j<json.length;j++)
                         {
-                            lista+="<option value='"+json[j].id+"'>" + json[j].name + json[j].cost+"</option>";
+                            lista+="<option value='"+json[j].id+"'>" + json[j].name +"  $"+ json[j].cost+"</option>";
                             select.innerHTML=lista;
                         }
             });

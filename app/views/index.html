@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="Css/Style.css">
     <title>Document</title>
 </head>
@@ -11,14 +15,11 @@
     <aside>
         <center>
         <form method="post" action="http://localhost:1340/api/personas">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" ><br>
-            <label for="edad">Cantidad:</label><br>
-            <input type="text" id="cantidad" name="cantidad" ><br>
-            <label>Precio</label><br>
-            <input type="text" id="precio" name="precio"><br><br>
-            <input id="btnAdd" type="button" value="Enviar">
-            <input id="btnListar" type="button" value="Listar">
+            <label for="nombre">Nombre:<br><input type="text" id="nombre" name="nombre" ></label><br>
+            <label for="cantidad">Cantidad:<br><input type="text" id="cantidad" name="cantidad" ></label><br>
+            <label for="precio">Precio<br><input type="text" id="precio" name="precio"></label><br><br>
+            <input id="btnAdd" type="button" value="Enviar" class="btn btn-outline-success btn_verde">
+            <input id="btnListar" type="button" value="Listar" class="btn btn-outline-success btn_verde">
             
         </form>
         <div id="resultados"></div>
@@ -26,16 +27,17 @@
     </aside>
     <main>
         <center>
-        <select name="Seleccion" id="Seleccion">USUARIOS</select><br>
-        <input type="number" id="cant"><br>
-        <input type="button" name="carrito" id="btnCarrito" value="Carrito">
-        <input type="button" name="Total" id="btnTotal" value="Total"><br>
+            <h3>Seleccione el producto y <br><span class="badge badge-primary">ponga la cantidad a desear</span></h3>
+        <select name="Seleccion" id="Seleccion" >USUARIOS</select>
+        <input type="number" id="cant" placeholder="Catidad"><br>
+        <input type="button" name="carrito" id="btnCarrito" value="Carrito" class="btn btn-outline-success btn_verde">
+        <input type="button" name="Total" id="btnTotal" value="Total" class="btn btn-outline-success btn_verde"><br>
         <label>Venta Total<br><input type="text" id="venta" name="venta" ></label><br>
         <label>IVA(16%)<br><input type="text" id="iva" name="iva" ></label><br>
         <label>Monto total<br><input type="text" id="monto" name="monto" ></label><br>
         <label>RFC<br><input type="text" id="rfc" name="rfc" ></label><br>
         <label>Fecha<br><input type="date" id="fecha" name="fecha" ></label><br>
-        <input id="btnFactura" type="button" value="Factura">
+        <input id="btnFactura" type="button" value="Factura" class="btn btn-outline-success btn_verde">
         <center>
     </main>
     <script src="Js/app.js"></script>       
